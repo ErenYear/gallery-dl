@@ -21,7 +21,6 @@ BASE_PATTERN = (r"(?:https?://)?(?:www\.|mobile\.)?"
 
 class TwitterExtractor(Extractor):
     """Base class for twitter extractors"""
-    category = "twitter"
     filename_fmt = "{tweet_id}_{num}.{extension}"
     archive_fmt = "{tweet_id}_{retweet_id}_{num}"
     cookies_domain = ".x.com"
